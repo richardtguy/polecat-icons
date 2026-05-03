@@ -30,6 +30,11 @@ function cleanSvg(raw) {
   svg = svg.replace(/fill="(?!none|currentColor)[^"]+"/g, 'fill="currentColor"');
   svg = svg.replace(/stroke="(?!none|currentColor)[^"]+"/g, 'stroke="currentColor"');
 
+  // If no fill is specified, default to currentColor (but only if the SVG doesn't already specify a fill)
+  if (!svg.includes('fill=')) {
+    svg = svg.replace('<svg ', '<svg fill="currentColor" ');
+  }
+
   // Collapse whitespace between tags for a smaller bundle
   svg = svg.replace(/>\s+</g, '><').replace(/\s{2,}/g, ' ');
 
