@@ -1,0 +1,39 @@
+/**
+ * myicons stylesheet
+ * Auto-generated — do not edit directly. Run: node build.js
+ */
+
+/* Base — icons render as 1em squares, aligned to the text baseline */
+i[class*="pi-"],
+svg[class*="pi-"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;  /* optical baseline correction */
+  overflow: hidden;
+  flex-shrink: 0;             /* prevents collapse inside flex containers */
+}
+
+/* The injected <svg> inherits its size from font-size, and its colour
+   from 'color' via currentColor in fill/stroke attributes. */
+svg[class*="pi-"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+/* ── Size modifiers ─────────────────────────────────────── */
+.pi-xs  { font-size: 0.625rem;  }   /* 10px @ 16px base */
+.pi-sm  { font-size: 0.875rem;  }   /* 14px */
+                                            /* default = 1em (inherits) */
+.pi-lg  { font-size: 1.25rem;   }   /* 20px */
+.pi-xl  { font-size: 1.5rem;    }   /* 24px */
+.pi-2x  { font-size: 2rem;      }   /* 32px */
+.pi-3x  { font-size: 3rem;      }   /* 48px */
+.pi-4x  { font-size: 4rem;      }   /* 64px */
+
+/* ── Utility modifiers ──────────────────────────────────── */
+.pi-fw {                            /* fixed-width, useful in nav lists */
+  width: 1.25em;
+  text-align: center;
+}
