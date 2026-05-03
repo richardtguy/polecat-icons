@@ -10,10 +10,10 @@ Add the stylesheet and script via jsDelivr — no npm, no build step required on
 
 ```html
 <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/richardtguy/polecat-icons@v0.0.1/dist/icons.css">
+  href="https://cdn.jsdelivr.net/gh/richardtguy/polecat-icons@v0.0.2/dist/icons.css">
 
 <script
-  src="https://cdn.jsdelivr.net/gh/richardtguy/polecat-icons@v0.0.1/dist/icons.js"></script>
+  src="https://cdn.jsdelivr.net/gh/richardtguy/polecat-icons@v0.0.2/dist/icons.js"></script>
 ```
 
 Then place an `<i>` element with the class `pi-{name}` wherever you want an icon:
@@ -33,7 +33,7 @@ Icons inherit the CSS `color` property of their parent — no extra work needed:
 
 <!-- Works inside buttons, alerts, nav links — anywhere colour is set via CSS -->
 <button style="color: white; background: #c0392b">
-  <i class="mi-polecat"></i> Delete
+  <i class="pi-polecat"></i> Delete
 </button>
 ```
 
@@ -53,7 +53,7 @@ Icons scale with `font-size`. Use the built-in size modifier classes, or set `fo
 | `pi-4x`  | 4rem (64px)    |
 
 ```html
-<i class="pi-polecat mi-sm"></i>
+<i class="pi-polecat pi-sm"></i>
 ```
 
 ---
@@ -100,7 +100,7 @@ src/thumbs-up.svg
 src/chevron-down.svg
 ```
 
-The filename becomes the class name: `src/alert-circle.svg` → `<i class="mi-alert-circle">`.
+The filename becomes the class name: `src/alert-circle.svg` → `<i class="pi-alert-circle">`.
 
 ---
 
